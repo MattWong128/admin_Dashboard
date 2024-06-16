@@ -176,7 +176,7 @@ h5 {
 .card-icons {
   display: flex;
   justify-content: end;
-  border: solid red;
+  /* border: solid red; */
   gap: 5px;
 }
 .card-icons > img {
