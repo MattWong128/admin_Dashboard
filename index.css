@@ -16,3 +16,7 @@ body {
   grid-column: 1/2;
   background-color: var(--custom_blue);
 }
+
+img {
+  filter: invert();
+}
