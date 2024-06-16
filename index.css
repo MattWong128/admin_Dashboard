@@ -73,7 +73,7 @@ h5 {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: 3fr 1fr;
-  padding: 0 80px 0;
+  padding: 20px 80px;
   row-gap: 20px;
 }
 .content-container {
@@ -101,7 +101,7 @@ h5 {
 .profile {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .profile #profile-pic {
   height: 60px;
@@ -110,10 +110,25 @@ h5 {
 .greeting {
   display: flex;
   align-items: center;
+  column-gap: 20px;
 }
 .greeting > img {
   height: 60px;
   border-radius: 100%;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.buttons > button {
+  border-radius: 30px;
+  background-color: var(--custom_blue);
+  color: white;
+  border-style: none;
+  width: 30%;
+  height: 50%;
+  font-weight: bold;
 }
 /* visual aid */
 .heading > div {
