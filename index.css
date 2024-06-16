@@ -187,12 +187,26 @@ h5 {
   grid-column: 2/3;
   grid-row: 1/2;
 }
-.trending {
+.trending-container {
   grid-column: 2/3;
   grid-row: 2/3;
-  background-color: blue;
 }
-
+.trending {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: repeat(4, 1fr);
+  background-color: white;
+  border-radius: var(--card_radius);
+  padding: 20px;
+  row-gap: 20px;
+}
+.trending img {
+  height: 50px;
+  border-radius: 100%;
+}
+.trending-text {
+  border: solid red;
+}
 .announcement-card {
   padding: 30px;
   background-color: white;
