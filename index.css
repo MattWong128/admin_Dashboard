@@ -163,11 +163,23 @@ h5 {
   /* background-color: green; */
 }
 .project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
   background-color: white;
   height: 250px;
   padding: 30px;
   border-radius: 8px;
   border-left: orange solid 10px;
+}
+.card-icons {
+  display: flex;
+  justify-content: end;
+  border: solid red;
+}
+.card-icons > img {
+  height: 25px;
 }
 .announcements {
   grid-column: 2/3;
