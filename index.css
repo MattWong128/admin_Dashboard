@@ -142,13 +142,14 @@ h5 {
 
 /* MAIN CONTENT*/
 .content-container {
+  --card_radius: 8px;
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
-  background-color: var(--custom_grey);
   padding: 40px 40px 60px 20px;
   column-gap: 20px;
   row-gap: 30px;
+  background-color: var(--custom_grey);
 }
 .projects {
   grid-column: 1/2;
@@ -170,7 +171,7 @@ h5 {
   background-color: white;
   height: 250px;
   padding: 30px;
-  border-radius: 8px;
+  border-radius: var(--card_radius);
   border-left: orange solid 10px;
 }
 .card-icons {
@@ -185,7 +186,6 @@ h5 {
 .announcements {
   grid-column: 2/3;
   grid-row: 1/2;
-  background-color: green;
 }
 .trending {
   grid-column: 2/3;
@@ -193,10 +193,22 @@ h5 {
   background-color: blue;
 }
 
+.announcement-card {
+  padding: 30px;
+  background-color: white;
+  border-radius: var(--card_radius);
+}
+.announcement-card .text {
+  font-size: 0.8rem;
+}
 .card-header {
   margin-bottom: 10px;
 }
 /* visual aid */
 .heading > div {
   /* border: solid black; */
+}
+hr {
+  opacity: 0.2;
+  margin: 20px 0;
 }
