@@ -72,15 +72,20 @@ h5 {
   padding-top: var(--top_padding);
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: 3fr 1fr;
+  /* grid-template-columns: 3fr 1fr; */
   padding: 20px 80px;
   row-gap: 20px;
+}
+.top,
+.bottom {
+  display: flex;
 }
 .content-container {
   background-color: var(--custom_grey);
 }
 .search {
   display: flex;
+  flex: 3;
   --searchbar_height: 30px;
   align-items: center;
 }
@@ -91,7 +96,7 @@ h5 {
   margin-right: 20px;
 }
 #search-bar {
-  width: 60%;
+  width: 70%;
   height: var(--searchbar_height);
   background-color: var(--custom_grey);
   border-radius: 30px;
@@ -102,15 +107,20 @@ h5 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 50px;
+  /* border: solid red; */
 }
 .profile #profile-pic {
   height: 60px;
   border-radius: 100%;
+  flex: 1;
 }
 .greeting {
   display: flex;
+  flex: 3;
   align-items: center;
   column-gap: 20px;
+  /* border: solid red; */
 }
 .greeting > img {
   height: 60px;
@@ -120,17 +130,18 @@ h5 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 60px;
 }
 .buttons > button {
   border-radius: 30px;
   background-color: var(--custom_blue);
   color: white;
   border-style: none;
-  width: 30%;
-  height: 50%;
+  width: 100px;
+  height: 55%;
   font-weight: bold;
 }
 /* visual aid */
 .heading > div {
-  border: solid black;
+  /* border: solid black; */
 }
