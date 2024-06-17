@@ -100,6 +100,7 @@ h5 {
   border-radius: 30px;
   border-style: none;
   cursor: 100px;
+  text-indent: 15px;
 }
 .profile {
   display: flex;
@@ -188,8 +189,12 @@ h5 {
   grid-row: 1/2;
 }
 .trending-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   grid-column: 2/3;
   grid-row: 2/3;
+  /* background-color: red; */
 }
 .trending {
   display: grid;
@@ -197,15 +202,16 @@ h5 {
   grid-template-rows: repeat(4, 1fr);
   background-color: white;
   border-radius: var(--card_radius);
-  padding: 20px;
-  row-gap: 20px;
+  padding: 30px;
+  row-gap: 30px;
 }
 .trending img {
   height: 50px;
   border-radius: 100%;
 }
 .trending-text {
-  border: solid red;
+  /* border: solid red; */
+  opacity: 0.7;
 }
 .announcement-card {
   padding: 30px;
